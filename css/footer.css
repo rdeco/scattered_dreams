@@ -1,0 +1,77 @@
+div.col-xs-12.footer{
+	position:relative;
+	height: 350px;
+	bottom: 0;
+	padding:0;
+	margin: 0;
+	z-index: 99999;
+	background: rgb(28, 49, 68);
+}
+
+
+
+/*------------ START OF MIN-WIDTH 1200px and MAX-WIDTH 1500px (bootstrap lrg | desktop)-------------*/
+@media only screen and (min-width: 75.000em) and (max-width: 93.750em) {
+	
+
+}
+/*------------ END OF MIN-WIDTH 1200px and MAX-WIDTH 1500px (bootstrap lrg | desktop)-------------*/
+
+
+
+/*------------ START OF MIN-WIDTH 768px and MAX-WIDTH 1199px (ipad landscape & PORTRAIT)-------------*/	
+@media only screen and (min-width: 48.000em) and (max-width: 74.938em) {
+}
+/*------------ END OF MIN-WIDTH 768px and MAX-WIDTH 1199px (ipad landscape & PORTRAIT)-------------*/	
+
+/*------------ START OF MIN-WIDTH 992px and MAX-WIDTH 1199px (bootstrap md | ipad landscape)-------------*/
+
+@media only screen and (min-width: 62.000em) and (max-width: 74.938em) {
+
+	
+}	
+
+/*------------ END OF MIN-WIDTH 992px and MAX-WIDTH 1199px (bootstrap md | ipad landscape)-------------*/	
+
+
+
+/*------------ START OF MIN-WIDTH 768px and MAX-WIDTH 991px (bootstrap sm | ipad portrait)-------------*/
+@media only screen and (min-width: 48.000em) and (max-width: 61.938em) {
+	
+
+}
+
+/*------------ END OF MIN-WIDTH 768px and MAX-WIDTH 991px (bootstrap sm | ipad portrait)-------------*/
+
+
+/*------------ START OF MIN-WIDTH 320px and MAX-WIDTH 767px (bootstrap xs | iphone4, iphone5, iphone6, iphone6+)-------------*/
+
+@media only screen and (min-width: 20.000em) and (max-width: 47.938em) {
+	
+	div.col-xs-12.footer{
+		bottom: auto;
+		height: auto;
+	}
+}
+/*------------ END OF MIN-WIDTH 320px and MAX-WIDTH 767px (bootstrap xs | iphone4, iphone5, iphone6, iphone6+)-------------*/
+
+
+/*------------ START OF MIN-WIDTH 320px and MAX-WIDTH 415px ( iphone4, iphone5, iphone6, iphone6+ portrait)-------------*/
+
+@media only screen and (min-width: 20.000em) and (max-width: 25.938em) {
+}
+/*------------ END OF MIN-WIDTH 320px and MAX-WIDTH 415px ( iphone4, iphone5, iphone6, iphone6+ portrait)-------------*/
+
+
+/*------------ START OF MIN-WIDTH 416px and MAX-WIDTH 568px ( iphone4, iphone5 landscape)-------------*/
+
+@media only screen and (min-width: 26.000em) and (max-width: 35.500em) {
+}
+/*------------ END OF MIN-WIDTH 416px and MAX-WIDTH 568px ( iphone4, iphone5 landscape)-------------*/
+
+/*------------ START OF MIN-WIDTH 569px and MAX-WIDTH 737px ( iphone6, iphone6+ landscape)-------------*/
+
+@media only screen and (min-width: 35.563em) and (max-width: 46.063em) {
+}
+/*------------ END OF MIN-WIDTH 569px and MAX-WIDTH 737px ( iphone6, iphone6+ landscape)-------------*/
+	

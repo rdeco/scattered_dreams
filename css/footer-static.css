@@ -1,0 +1,21 @@
+div.col-xs-12.footer{
+	position:absolute;
+	height: 350px;
+	bottom: 0;
+	padding:0;
+	margin: -5% 0;
+	background: rgb(28, 49, 68);
+}
+
+
+/*------------ START OF MIN-WIDTH 320px and MAX-WIDTH 1500px (desktop & all mobile)-------------*/
+@media only screen and (min-width: 20.000em) and (max-width: 93.750em) {
+			
+	div.col-xs-12.footer{
+		bottom: initial;
+		margin-top: 5%;
+	}	
+
+}
+/*------------ END OF MIN-WIDTH 320px and MAX-WIDTH 1500px (desktop & all mobile)-------------*/
+	
