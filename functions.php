@@ -44,7 +44,7 @@ function scatteredDreams_scripts(){
     wp_enqueue_script('main-js', get_template_directory_uri().'/js/main.js', array('proximity-js'), true, true);     
     
     if(is_404()){
-		wp_enqueue_script('ninja-404-js', get_template_directory_uri().'/js/ninja-404.js' );		
+		wp_enqueue_script('ninja-404-js', get_template_directory_uri().'/js/ninja-404.js', array('jquery'), true, true );		
 	};
 }
 
@@ -77,24 +77,6 @@ add_action('init', 'scatteredDreams_register_menu');
 * End register Navigation Menus
 * -------------------------
 */
-
-
-function scatteredDreams_widgets_init() {
-
-register_sidebar(array(
-    'name' => __('Header Social Media Widget Area ', 'scatteredDreamsWidget'),
-    'id' => 'header-searchbar-widget-area',
-    'before-widget' => '<div class="social-media">',
-    'right-widget' => '</div>',
-    'before-title' => '',
-    'after-title' => '',
-    ));
-}
-
-add_action ('init', 'scatteredDreams_widgets_init');
-
-
-
 
 
 /**
@@ -155,35 +137,6 @@ add_action ('init', 'scatteredDreams_widgets_init');
 * -------------------------------------------------------------------
 */
 
-
-
-/***
- * register widgets for featured content
- * -----------------------------------
- */
- 
- function scatteredDreams_featured_widget($name, $id, $description){
-	 register_sidebar(array(
-		 'name' => __( $name ),
-		 'id' => $id,
-		 'description' => __($description),
-		 'before_widget' => '',
-		 'after_widget' => '',
-		 'before_title' => '<h1 class="featured-h1"> ',
-		 'after_title' => '</h1> '
-		 
-	 ));
-}
-scatteredDreams_featured_widget( 'Featured Post Left', 'featured-left', 'Displays featured post on the left side of the page' );
-scatteredDreams_featured_widget( 'Featured Post Center', 'featured-center', 'Displays featured post on the center side of the page' ); 
-scatteredDreams_featured_widget( 'Featured Post Right', 'featured-right', 'Displays featured post on the right side of the page' ); 
-
-/***
- *  end register widgets for featured content
- * ---------------------------------------
- */
- 
-
 /***
  * register multiple images
  * --------------------------
@@ -237,6 +190,31 @@ if (class_exists('MultiPostThumbnails')) {
  * -------------------
  */
  
+ /***
+ * register widget for header search bar & social media links 
+ * ------------------------------------------------------------
+ */ 
+ 
+function scatteredDreams_widgets_init() {
+
+register_sidebar(array(
+    'name' => __('Header Social Media Widget Area ', 'scatteredDreamsWidget'),
+    'id' => 'header-searchbar-widget-area',
+    'before-widget' => '<div class="social-media">',
+    'right-widget' => '</div>',
+    'before-title' => '',
+    'after-title' => '',
+    ));
+}
+
+add_action ('init', 'scatteredDreams_widgets_init');
+
+ /***
+ * End register widget for header search bar & social media links 
+ * ---------------------------------------------------------------
+ */ 
+ 
+ 
 
  /***
  * register widget for post sidebar 
@@ -277,6 +255,49 @@ scatteredDreams_footer_widget( 'Left Side Footer', 'footer-left', 'Displays widg
  *  end register widget for post sidebar 
  * ---------------------------------------
  */
+ 
+ /***
+ * register widgets for featured content
+ * -----------------------------------
+ */
+ 
+ function scatteredDreams_featured_widget($name, $id, $description){
+	 register_sidebar(array(
+		 'name' => __( $name ),
+		 'id' => $id,
+		 'description' => __($description),
+		 'before_widget' => '',
+		 'after_widget' => '',
+		 'before_title' => '<h1 class="featured-h1"> ',
+		 'after_title' => '</h1> '
+		 
+	 ));
+}
+scatteredDreams_featured_widget( 'Featured Post Left', 'featured-left', 'Displays featured post on the left side of the page' );
+scatteredDreams_featured_widget( 'Featured Post Center', 'featured-center', 'Displays featured post on the center side of the page' ); 
+scatteredDreams_featured_widget( 'Featured Post Right', 'featured-right', 'Displays featured post on the right side of the page' ); 
+
+/***
+ *  end register widgets for featured content
+ * ---------------------------------------
+ */
+ 
+
+function scatteredDreams_404_widget($name, $id, $description){
+	 register_sidebar(array(
+		 'name' => __( $name ),
+		 'id' => $id,
+		 'description' => __($description),
+		 'before_widget' => '',	
+		 'after_widget' => '',
+		 'before_title' => '<h1>',
+		 'after_title' => '</h1>'
+		 
+	 ));
+}
+scatteredDreams_404_widget( 'Search Bar for 404 Page', 'search-404', 'Displays search bar on 404 page' );
+
+ 
  
  /**
 * Adds support for pagination
