@@ -1924,6 +1924,33 @@ p.footer-about-excerpt{
 	/* end of column 3 */	
 
 	/*------------ end of footer page  ---------------*/	
+	
+	/*------------ start of 404 page  ---------------*/		
+	h1.contact-404{
+		margin-top: 15%;
+		margin-bottom: -20%;
+	}
+	
+	.msg{
+		margin-top: 30%;
+	}
+	
+	#ninja-head{	
+	   	top: -33%;   
+	    left: -37%;      
+	}
+	
+	.search-form-404{
+		margin: 30% 0% 0 0;
+	}
+	
+	.search-form-404 input#s{		
+		width: 65%;
+	
+	}
+
+	/*------------ start of 404 page  ---------------*/	 
+  
 }
 
 /*------------ END OF MIN-WIDTH 992px and MAX-WIDTH 1199px (bootstrap md | ipad landscape)-------------*/
@@ -2110,6 +2137,38 @@ p.footer-about-excerpt{
 	}
 
 	/*------------ start of footer ---------------*/
+	
+	
+	/*------------ start of 404 page  ---------------*/		
+	h1.contact-404{
+		margin-top: 33%;
+		margin-bottom: -20%;
+	}
+	
+	input#searchsubmit{
+		vertical-align:top;
+	}
+	
+	.msg{
+		margin-top: 30%;
+		width: 45%;
+	}
+	
+	#ninja-head{	
+	   	top: -70%;   
+	    left: -30%;      
+	}
+	
+	.search-form-404{
+		margin: 35% 0% 0 15%;
+	}
+	
+	.search-form-404 input#s{		
+		width: 65%;	
+	}
+
+	/*------------ start of 404 page  ---------------*/	 	
+	
 	
 }
 
@@ -2509,6 +2568,48 @@ p.footer-about-excerpt{
 	}
 	
 	/*------------ end of footer  ---------------*/
+	
+	/*------------ start of 404 page  ---------------*/	
+	
+	.content-404{
+		height: 350px;
+	}
+	
+	h1.contact-404{
+		margin:88% 0% -30% 0%;
+		font-size: 2.5em;		
+	}
+	
+*	input#searchsubmit{
+		vertical-align:top;
+	}
+	
+*	.msg,
+	#ninja{
+		display: none;
+	}
+	
+	#ninja-head{	
+	   	top: -100%;   
+	    left: -34%;      
+	}
+	
+	.search-form-404{
+		margin: 50% 0% 0 0%;
+		position: absolute;
+		left: -53%;
+		right: 3%;
+	}
+	
+*	.search-form-404 input#s{		
+		width: 65%;	
+	}
+	
+	div.search-form-404 form#searchform{
+		display: inline-block;
+	}
+
+	/*------------ start of 404 page  ---------------*/	 	
 }
 
 /*------------ END OF MIN-WIDTH 320px and MAX-WIDTH 415px (iphone4, iphone5, iphone6, iphone6+ portrait)-------------*/
@@ -2721,6 +2822,45 @@ p.footer-about-excerpt{
 	}
 	
 	/*------------ send of footer ---------------*/	
+	
+	/*------------ start of 404 page  ---------------*/		
+	h1.contact-404{
+		margin:28% -17% -30% 40%;
+		width: 60%;
+		font-size: 2.5em;		
+	}
+	
+*	input#searchsubmit{
+		vertical-align:top;
+	}
+	
+*	.msg,
+	#ninja{
+		display: none;
+	}
+	
+	#ninja-head{	
+	   	top: -50%;   
+	    left: -34%;      
+	}
+	
+	.search-form-404{
+		margin: 50% 0% 0 0%;
+		position: absolute;
+		left: -24%;
+		right: 15%;
+	}
+	
+*	.search-form-404 input#s{		
+		width: 65%;	
+	}
+	
+	div.search-form-404 form#searchform{
+		display: inline-block;
+	}
+
+	/*------------ start of 404 page  ---------------*/	 		
+	
 		
 }
 
@@ -2920,6 +3060,36 @@ p.footer-about-excerpt{
 	}
 	
 	/*------------ send of footer ---------------*/		
+	
+	/*------------ start of 404 page  ---------------*/		
+	h1.contact-404{
+		margin-top: 35%;
+		margin-bottom: -20%;
+	}
+	
+	input#searchsubmit{
+		vertical-align:top;
+	}
+	
+	.msg,
+	#ninja{
+		display: none;
+	}
+	
+	#ninja-head{	
+	   	top: -65%;   
+	    left: -32%;      
+	}
+	
+	.search-form-404{
+		margin: 27% 27% 0 0%;
+	}
+	
+	.search-form-404 input#s{		
+		width: 65%;	
+	}
+
+	/*------------ start of 404 page  ---------------*/	 	
 				
 }
 
