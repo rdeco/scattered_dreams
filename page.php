@@ -17,7 +17,7 @@
         		?>
 			</div>
 			<div class="row">
-				<div id="single-content" class="col-xs-12 single-content">
+				<section id="single-content" class="col-xs-12 single-content">
 					
 					<div class=" col-xs-6 col-xs-offset-3 post-content">	
 						<h1 class="about-content-h1"><?php the_title(); ?></h1>
@@ -27,7 +27,7 @@
 							}	
 						}
 					?>
-				</div>
+				</section>
 				<?php get_footer(); ?>
 			</div>
 		</div><!-- .col-xs-12 .wrapper -->
