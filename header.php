@@ -9,7 +9,6 @@
 		<script>
 			var $ = jQuery;
 		</script>
-
 	</head>
 	<body <?php body_class(); ?>>		
         <header class="container">
@@ -51,8 +50,7 @@
 	                        	<?php dynamic_sidebar ('header-searchbar-widget-area'); ?>
 							<?php endif; ?>  
                     	</div> 
-                    </div><!-- /.container-fluid-->    
-       
+                    </div><!-- /.container-fluid-->          
                 </nav>
             </div>
         </header>				
