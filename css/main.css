@@ -30,15 +30,6 @@ portfolio archive page - portfolio image  -> 480px x 360px
 
 /* START OF GLOBAL STYLES --------------------------------------------------------------------------*/
 
-
-/*
-	*{
-	border: 1px solid red;
-}
-*/
-
-
-
 body{
 	overflow-x: hidden;
 }
@@ -440,7 +431,7 @@ label.screen-reader-text{
 	margin: 8% auto 0 auto;
 	position: relative;
 	overflow:hidden;
-	background: transparent url(../imgs/2.jpg) right ;
+	background: transparent url(../imgs/mosaic-lrg.jpg) right ;
 	bckground-repeat: no-repeat;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
@@ -784,8 +775,6 @@ figure.featured-img:hover .textwidget {
 	transform: translate3d(0,-50%,0) translate3d(0,100%,0);
 }
 
-
-
 .featured-content{
 	position: relative;
 	margin: 0 auto;
@@ -1110,11 +1099,6 @@ span.post-date{
 
 /* END OF SINGLE POST CONTENT --------------------------------------------------------------------------*/
 
-/* START OF PAGE CONTENT --------------------------------------------------------------------------*/
-	
-
-/* END OF PAGE CONTENT --------------------------------------------------------------------------*/
-
 /* START OF ARCHIVE CONTENT --------------------------------------------------------------------------*/
 
 #archive-content{
@@ -1134,21 +1118,21 @@ span.post-date{
 	margin-top: 35%;
 }
 
-div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
+section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
 	margin-top: 15%;
 }
 
-div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content > li {
+section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content > li {
 	display: inline-block;
 	margin: 2%;
 }
 
-div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content > li a{
+section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content > li a{
 	color: rgb(89, 116, 123);	
 }
 
-div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content > li a:hover,
-div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content > li a:focus{
+section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content > li a:hover,
+section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content > li a:focus{
 	color: rgba(0, 0, 0, 0.3);
 	text-decoraton: none;
 }
@@ -1302,11 +1286,21 @@ textarea.wpcf7-form-control.wpcf7-textarea{
     left: -22%; 
     background:transparent url(../imgs/ninja-head.gif) no-repeat center center;       
 }
+/* END OF 404 CONTENT ----------------------------------------------------------------------------*/
+
+/* START OF SEARCH FORM - LARGE ------------------------------------------------------------------------*/
+
+
+.search-form{
+	margin: 9% 28% 0 0;
+}
+
 
 .search-form-404{
 	margin: 11% 25% 0 0;
 }
 
+.search-form input#s,
 .search-form-404 input#s{
 	border: 5px solid rgb(28, 49, 68);		
 	width: 85%;
@@ -1316,15 +1310,13 @@ textarea.wpcf7-form-control.wpcf7-textarea{
 	padding: 2%;	
 }
 
+.search-form #searchsubmit,
 .search-form-404 #searchsubmit{
 	font-size: 2em;
 	
 }
-  
-  
-  
-/* END OF 404 CONTENT ----------------------------------------------------------------------------*/
 
+/* END OF SEARCH FORM - LARGE------------------------------------------------------------------------*/
 
 /* START OF FOOTER CONTENT --------------------------------------------------------------------------*/
 
@@ -1463,8 +1455,6 @@ p.footer-about-excerpt{
 
 /* END OF FOOTER CONTENT --------------------------------------------------------------------------*/
 
-
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------- START OF MEDIA QUERIES ------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -1571,7 +1561,7 @@ p.footer-about-excerpt{
 		margin-top:42%;
 	}
 	
-	div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
+	section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
 		margin-top:23%;
 		margin-bottom: 5%;
 	}
@@ -1588,7 +1578,19 @@ p.footer-about-excerpt{
 		width: 55%;
 	}	
 	
-	/*------------ end of footer ---------------*/		
+	/*------------ end of footer ---------------*/	
+	
+	/*------------ start of 404 page ---------------*/
+	
+	#ninja-head{
+		top: -73%;
+		left: -31%;
+	}	
+	
+	.search-form-404{
+		margin: 20% 27% 0 -5%;
+	}	
+	/*------------ end  of 404 page ---------------*/		
 }
 
 /*------------ END OF MIN-WIDTH 1200px and MAX-WIDTH 1500px (bootstrap lrg | desktop)-------------*/
@@ -1688,11 +1690,7 @@ p.footer-about-excerpt{
 	 
 	/*------------ end of about page  ---------------*/	
 	
-	/*------------ start of footer ---------------*/		
 	
-
-	
-	/*------------ start of footer ---------------*/	
 		
 }
 
@@ -1838,7 +1836,7 @@ p.footer-about-excerpt{
 		margin-top: 65%;
 	}
 	
-	div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
+	section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
 		margin-top: 33%;
 		margin-bottom: 5%;
 	}
@@ -1945,12 +1943,18 @@ p.footer-about-excerpt{
 	}
 	
 	.search-form-404 input#s{		
-		width: 65%;
-	
+		width: 65%;	
 	}
 
-	/*------------ start of 404 page  ---------------*/	 
-  
+	/*------------ start of 404 page  ---------------*/
+		 
+	/*------------ start of search page -------------*/
+		
+	.search-form{
+		margin: 9% 0 0 0;
+	}
+	
+	/*------------ end of search page -------------*/	  
 }
 
 /*------------ END OF MIN-WIDTH 992px and MAX-WIDTH 1199px (bootstrap md | ipad landscape)-------------*/
@@ -2110,7 +2114,7 @@ p.footer-about-excerpt{
 		margin-top: 130%;
 	}	
 	
-	div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
+	section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
 		margin-top: 45%;
 		margin-bottom: 10%;
 	}
@@ -2168,8 +2172,18 @@ p.footer-about-excerpt{
 	}
 
 	/*------------ start of 404 page  ---------------*/	 	
+
+	/*------------ start of search page -------------*/
+		
+	.search-form{
+		margin: 9% 0 0 24%;
+		width: 50%;
+	}
 	
-	
+	.search-form #searchsubmit{
+		margin: 0 -25% 0 0;
+	}
+	/*------------ end of search page -------------*/		
 }
 
 /*------------ END OF MIN-WIDTH 768px and MAX-WIDTH 991px (bootstrap sm | ipad portrait)-------------*/
@@ -2309,8 +2323,7 @@ p.footer-about-excerpt{
 	div.pagination nav{
 		margin: 5% 0%;
 	}
-	
-	
+		
 	/*------------ end of single page content ------------*/
 	
 	/*------------ start of archives page  ---------------*/	
@@ -2333,7 +2346,28 @@ p.footer-about-excerpt{
 		text-align: center;
 	}
 	
-	/*------------ end of footer content------------*/				
+	/*------------ end of footer content------------*/	
+	
+	/*------------ start of 404 page  ---------------*/	
+	input#searchsubmit{
+		vertical-align:top;
+	}
+	
+	.msg,
+	#ninja{
+		display: none;
+	}	
+	
+	.search-form-404 input#s{		
+		width: 65%;	
+	}
+	
+	div.search-form-404 form#searchform{
+		display: inline-block;
+	}
+	
+	/*------------ end of 404 page  ---------------*/	
+			
 }
 
 /*------------ END OF MIN-WIDTH 320px and MAX-WIDTH 767px (bootstrap xs | iphone4, iphone5, iphone6)-------------*/
@@ -2492,7 +2526,7 @@ p.footer-about-excerpt{
 	}
 	
 
-	div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
+	section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
 		margin-top: 55%;
 		margin-bottom: 10%;
 	}
@@ -2558,8 +2592,9 @@ p.footer-about-excerpt{
 		right:3%;
 	}
 	
+	div.col-xs-12.footer,
 	.footer-gradient{
-		height: 425px;
+		height: initial;
 	}
 		
 	p.footer-about-excerpt{
@@ -2580,15 +2615,6 @@ p.footer-about-excerpt{
 		font-size: 2.5em;		
 	}
 	
-*	input#searchsubmit{
-		vertical-align:top;
-	}
-	
-*	.msg,
-	#ninja{
-		display: none;
-	}
-	
 	#ninja-head{	
 	   	top: -100%;   
 	    left: -34%;      
@@ -2599,14 +2625,6 @@ p.footer-about-excerpt{
 		position: absolute;
 		left: -53%;
 		right: 3%;
-	}
-	
-*	.search-form-404 input#s{		
-		width: 65%;	
-	}
-	
-	div.search-form-404 form#searchform{
-		display: inline-block;
 	}
 
 	/*------------ start of 404 page  ---------------*/	 	
@@ -2764,7 +2782,7 @@ p.footer-about-excerpt{
 		margin-top: 9%;
 	}
 	
-	div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
+	section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
 		margin-top: 30%;
 		margin-bottom: 10%;
 	}
@@ -2830,15 +2848,6 @@ p.footer-about-excerpt{
 		font-size: 2.5em;		
 	}
 	
-*	input#searchsubmit{
-		vertical-align:top;
-	}
-	
-*	.msg,
-	#ninja{
-		display: none;
-	}
-	
 	#ninja-head{	
 	   	top: -50%;   
 	    left: -34%;      
@@ -2850,16 +2859,10 @@ p.footer-about-excerpt{
 		left: -24%;
 		right: 15%;
 	}
-	
-*	.search-form-404 input#s{		
-		width: 65%;	
-	}
-	
-	div.search-form-404 form#searchform{
-		display: inline-block;
-	}
 
-	/*------------ start of 404 page  ---------------*/	 		
+	/*------------ start of 404 page  ---------------*/	 
+	
+	
 	
 		
 }
@@ -3015,7 +3018,7 @@ p.footer-about-excerpt{
 		margin-top: 20%;
 	}		
 	
-	div.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
+	section.col-xs-12.col-sm-6.col-sm-offset-3.archive-content{
 		margin-top: 25%;
 		margin-bottom: 5%;
 	}
@@ -3067,15 +3070,6 @@ p.footer-about-excerpt{
 		margin-bottom: -20%;
 	}
 	
-	input#searchsubmit{
-		vertical-align:top;
-	}
-	
-	.msg,
-	#ninja{
-		display: none;
-	}
-	
 	#ninja-head{	
 	   	top: -65%;   
 	    left: -32%;      
@@ -3084,12 +3078,19 @@ p.footer-about-excerpt{
 	.search-form-404{
 		margin: 27% 27% 0 0%;
 	}
-	
-	.search-form-404 input#s{		
-		width: 65%;	
-	}
-
 	/*------------ start of 404 page  ---------------*/	 	
+
+	/*------------ start of search page -------------*/
+		
+	.search-form{
+		margin: 9% 0 0 10%;
+		width: 50%;
+	}
+	
+	.search-form #searchsubmit{
+		margin: 0 -25% 0 0;
+	}
+	/*------------ end of search page -------------*/	
 				
 }
 
