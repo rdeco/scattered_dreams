@@ -38,11 +38,20 @@
 					</div>
 					<?php
 							}
+													
+						} else { 
+						
+					?>
+						<h1 class="search-title">no search results found</h1>
+						<div id="search-form" class="search-form">						
+							<?php if (dynamic_sidebar('search-404')); ?>					 
+						</div>	
+					<?php	
 						}
 					?>						
 												
 				</div>				
 			</div>
-		</div>	
+		</div>
+		<?php get_footer(); ?>		
 	</div>
-<?php get_footer(); ?>	
