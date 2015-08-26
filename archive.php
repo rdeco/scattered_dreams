@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 	<div class="container-fluid">
-		<div class="row">
-				
+		<div class="row">	
 			<?php if(is_month()) { ?>
 					<div class="date-header">
 						<h1 class="date-header"><?php the_time('F Y'); ?> </h1>
@@ -20,14 +19,14 @@
 					</div>	
 			<?php } ?>						
 
-			<div class="col-xs-12 grid">
+			<section class="col-xs-12 grid">
 				<div class="row">
 					<?php
 						if (have_posts()){
 							while(have_posts()){
 								the_post();
 					?>						
-					<div class="col-xs-12 col-sm-4 ">
+					<article class="col-xs-12 col-sm-4 ">
 						<figure class="effect-romeo">
 							<?php 							
 								if (class_exists('MultiPostThumbnails')) : 						
@@ -47,14 +46,14 @@
 								<a href="<?php the_permalink(); ?>">Read More</a>
 							</figcaption>
 						</figure>
-					</div>
+					</article>
 					<?php
 							}
 						}
 					?>						
 													
 				</div>				
-			</div>	
+			</section>	
 	        <?php if (show_posts_nav()) { ?>
 		        <div class="pagination blog-archive">
 		            <nav>
@@ -64,6 +63,6 @@
 		            </nav>
 		        </div>
 			<?php } ?>		
-			<?php get_footer(); ?>											
-		</div>							
+		</div>
+		<?php get_footer(); ?>								
 	</div>		
