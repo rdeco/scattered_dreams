@@ -18,7 +18,7 @@
 									<p class="footer-about-excerpt">Catnipsum dolor sit amet fluffy daisy tabby catnipsum catnip meow. Catnipsum twitchy ears kitty-litter lucky mrow let the cat out of the bag. Mrowwwww mrooww lazy
 									</p>
 									
-									<img src="<?php print IMAGES; ?>/cat-king.png" alt="img02">										
+									<img src="<?php print IMAGES; ?>/cat-king-portrait.png" alt="img02">										
 								</a>
 							</div>															
 						</div>
