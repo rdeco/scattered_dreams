@@ -49,8 +49,7 @@
 	                    <?php next_posts_link(' Next Page  &raquo; ') ?>
 		            </nav>
 		        </div>
-			<?php } 	?>
-													
+			<?php } ?>													
 		</div>							
 	</div>		
-					 <?php get_footer(); ?>	
+<?php get_footer(); ?>	
